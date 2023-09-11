@@ -1,0 +1,364 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 11.35vw;
+    position: absolute;
+    font-family:'Poppins', sans-serif;;
+    color: white;
+    line-height:90%;
+    top: 8%;
+    left: 2%;
+
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+
+h2{
+    font-size: 1.56vw;
+    position: absolute;
+    font-family:'Poppins', sans-serif;;
+    color: #00AAB7;
+    line-height: 10%;
+    top: 12.5vw;
+    text-align: center;
+    left: 23.44vw;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    width: 100%;
+    height: 20%;
+    position: relative;
+    top: 3%;
+    margin-bottom: 7vh;
+}
+
+.logo{
+    height: fit-content;
+    width: fit-content;
+
+    position: relative;
+    left: 5.5%;
+    top: 11%;
+}
+
+.socjal{
+    width: fit-content;
+    margin-left: auto;
+
+    position: relative;
+    right: 4.8%;
+    top: 15%;
+}
+
+.karuzela {
+    width: 100%;
+    position: relative;
+}
+
+.karuzela-slajdy {
+    display:flex;
+    float: right;
+}
+
+.karuzela-slajdy img{
+    height: 35vw;
+}
+
+.karuzela-slajdy img:not(.pierwsze){
+    display: none;
+}
+
+.karuzela button{
+    position: absolute;
+    bottom: 3vw;
+    background: transparent;
+    border: none;
+}
+
+.karuzela button img{
+    width: 1vw;
+    padding: 1vw;
+}
+
+.karuzela button:hover{
+    cursor: pointer;
+}
+
+.przodbtn{
+    right: 5vw;
+}
+
+.tylbtn{
+    left: 5vw;
+}
+
+.cialo{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    justify-content:center;
+
+    top: 5vw;
+}
+
+.click {
+    display: flex;
+    position: relative;
+    height: fit-content;
+}
+
+.click img{
+    width: 25vw;
+}
+
+.prace {
+    position: absolute;
+    border-radius: 100%;
+    display: flex;
+}
+
+.prace div {
+    display: none;
+    border-radius: 100%;
+    background-color: rgba(255, 204, 0, 0.688);
+    color: white;
+    font-size: 3vw;
+    font-family:'Poppins', sans-serif;;
+    text-align: center;
+    position: relative;
+}
+
+.prace div p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.prace:hover div {
+    display: block;
+}
+
+.jarzynowa p {top: 35%;}
+.dziki p {top: 35%}
+.kot p {top: 26%}
+.syrenka p {top: 37%}
+.pomarancze p {top: 34%}
+.walizka p {top: 30%}
+.wrozka p {top: 38%}
+.kosmos p {top: 30%}
+.pranie p {top: 30%}
+
+.dziki div{
+    width: 36.46vw;
+    height: 36.46vw;
+}
+
+.dziki {
+    height: 36.46vw;
+    width: 36.46vw;
+    left: 2.08vw;
+    top: 2.6vw;
+    background-image: url("./img/dziki.png");
+    background-size:cover;
+}
+
+.kot div{
+    width: 21.51vw;
+    height: 21.51vw;
+}
+
+.kot{
+    height: 21.51vw;
+    width: 21.51vw;
+    left: 40.21vw;
+    top: 12.03vw;
+    background-image: url("./img/kot.png");
+    background-size:cover;
+}
+
+
+.syrenka div{
+    width: 35.26vw;
+    height: 35.26vw;
+}
+
+.syrenka{
+    height: 35.26vw;
+    width: 35.26vw;
+    left: 63.02vw;
+    top: 0.99vw;
+    background-image: url("./img/syrenka.png");
+    background-size:cover;
+}
+
+.pomarancze div{
+    width: 30.78vw;
+    height: 30.78vw;
+}
+
+.pomarancze{
+    height: 30.78vw;
+    width: 30.78vw;
+    top: 41.88vw;
+    left: 2.08vw;
+    background-image: url("./img/pomarancze.png");
+    background-size:cover;
+}
+
+.jarzynowa div{
+    width: 35.89vw;
+    height: 35.89vw;
+}
+
+.jarzynowa{
+    width: 35.89vw;
+    height: 35.89vw;
+    top: 36.41vw;
+    left: 34.58vw;
+    background-image: url("./img/jarzynowa.png");
+    background-size: cover;
+}
+
+.walizka div{
+    width: 24.74vw;
+    height: 24.74vw;
+}
+
+.walizka{
+    height: 24.74vw;
+    width: 24.74vw;
+    top: 39vw;
+    left: 72.5vw;
+    background-image: url("./img/walizka.png");
+    background-size:cover;
+}
+
+.kosmos div{
+    width: 25.83vw;
+    height: 25.83vw;
+}
+
+.kosmos{
+    height: 25.83vw;
+    width: 25.83vw;
+    top: 76.46vw;
+    left: 2.08vw;
+    background-image: url("./img/kosmos.png");
+    background-size:cover;
+}
+
+.pranie div{
+    width: 25.16vw;
+    height: 25.16vw;
+}
+
+.pranie{
+    height: 25.16vw;
+    width: 25.16vw;
+    top: 73.34vw;
+    left: 30.26vw;
+    background-image: url("./img/pranie.png");
+    background-size:cover;
+}
+
+.wrozka div{
+    width: 35.72vw;
+    height: 35.72vw;
+}
+
+.wrozka{
+    height: 35.72vw;
+    width: 35.72vw;
+    top: 66.36vw;
+    left: 59.85vw;
+    background-image: url("./img/wrozka.png");
+    background-size:cover;
+}
+
+.kontakt{
+    height: 19.22vw;
+    width: 100%;
+    position: relative;
+
+    top:95vw;
+
+    padding-bottom: 11vw;
+}
+
+.thank{
+    width: fit-content;
+    background-repeat: no-repeat;
+    float: right;
+    position: relative;
+    top: 30%;
+    margin-right: 10%;
+}
+
+.thank img{
+    width: 23vw;
+}
+
+.skrzynka{
+    width: fit-content;
+    background-repeat: no-repeat;
+    float: left;
+    position: relative;
+    top: 40%;
+    margin-left: 5%;
+}
+
+.skrzynka img{
+    width: 19vw;
+}
+
+.email{
+    margin-top: 1.5vw;
+}
+
+@media only screen and (max-width: 620px) {
+
+    .menu {
+        height: fit-content;
+        padding-bottom: 3%;
+        padding-top: 3%;
+    }
+
+    .logo{
+        margin-right: 5%;
+    }
+
+    .logo img{
+        width: 90%;
+    }
+
+    .socjal{
+        width: 10%;
+    }
+
+    .socjal img{
+        width: 90%;
+    }
+
+    .karuzela-slajdy img{
+        height: 73vw;
+    }
+}
